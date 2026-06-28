@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Sultan ❤️</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/images/tulip.png">
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="floating-hearts"></div>
+
+    <div class="sparkles"></div>
+
+    <div class="flowers"></div>
+
+</div>
+
+
+<audio id="music1" loop>
+    <source src="assets/music/music1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="music2" loop>
+    <source src="assets/music/music2.mp3" type="audio/mpeg">
+</audio>
+
+
+<section id="welcomePage" class="page active">
+
+    <div class="card">
+
+        <img
+            src="assets/gif/welcome.gif"
+            alt="Welcome Gif"
+            id="welcomeGif"
+            class="welcome-gif">
+
+        <h1>
+            Selamat Datang 🤍
+        </h1>
+
+        <p class="subtitle">
+            Ada sesuatu buat kamu...
+        </p>
+
+        <p class="click-text">
+            Sentuh GIF di atas yaa ✨
+        </p>
+
+    </div>
+
+</section>
+
+<section id="giftPage" class="page hidden">
+
+    <div class="gift-container">
+
+        <img
+            src="assets/images/gift.png"
+            alt="Gift"
+            id="giftBox"
+            class="gift-box">
+
+        <p class="gift-text">
+            Sentuh kadonya ya 🎁
+        </p>
+
+    </div>
+
+</section>
+
+<section id="birthdayPage" class="page hidden">
+
+    <div class="birthday-content">
+
+        <h1 id="birthdayTitle">
+            Selamat Ulang Tahun 🎉
+        </h1>
+
+        <h2 id="birthdayName">
+            Muhammad Sultan Aminuddin Masfuk
+        </h2>
+
+        <h3 id="birthdayDate">
+            30 Juni 2005
+        </h3>
+
+        <!-- Animasi Balon -->
+        <div id="balloons"></div>
+
+        <!-- Confetti -->
+        <div id="confetti"></div>
+
+        <!-- Tulip -->
+        <div id="tulipRain"></div>
+
+        <!-- Sparkle -->
+        <div id="sparkleEffect"></div>
+
+    </div>
+
+</section>
+
+<section id="wishPage" class="page hidden">
+
+    <div class="wish-card">
+
+        <h1 class="wish-title">
+            🌠 Make a Wish
+        </h1>
+
+        <p class="wish-text">
+            Sebelum lanjut...
+            <br><br>
+            Tulis satu harapanmu di sini yaa 🤍
+        </p>
+
+        <textarea
+            id="wishInput"
+            class="wish-input"
+            placeholder="Tulis harapanmu di sini..."></textarea>
+
+        <button id="wishBtn" class="wish-btn">
+            ✨ Kirim Harapan
+        </button>
+
+        <p id="wishResult" class="wish-result"></p>
+
+    </div>
+
+</section>
+
+<section id="cakePage" class="page hidden">
+
+    <div class="cake-card">
+
+        <h1 class="cake-title">
+            🎂 Selamat Ulang Tahun
+        </h1>
+
+        <p class="cake-text">
+            Sebelum lanjut...
+            <br>
+            Tiup lilinnya dulu yaa 🤍
+        </p>
+
+        <div class="cake-container">
+
+            <!-- Api Lilin -->
+            <div id="flame" class="flame"></div>
+
+            <!-- Gambar Kue -->
+            <img
+                src="assets/images/cake.png"
+                alt="Birthday Cake"
+                class="cake-image">
+
+        </div>
+
+        <button id="blowBtn" class="cake-btn">
+            🌬 Tiup Lilin
+        </button>
+
+    </div>
+
+</section>
+
+<section id="giftQuestionPage" class="page hidden">
+
+    <div class="gift-card">
+
+        <div class="gift-icon">
+            🎁
+        </div>
+
+        <h1 class="gift-title">
+            Mau Kado?
+        </h1>
+
+        <p class="gift-text">
+            Aku masih punya satu hadiah kecil buat kamu...
+            <br><br>
+            Mau buka sekarang? 🤍
+        </p>
+
+        <div class="gift-buttons">
+
+            <button id="yesGiftBtn" class="yes-btn">
+                💖 Mau
+            </button>
+
+            <button id="noGiftBtn" class="no-btn">
+                🙈 Nggak
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="noGiftPage" class="page hidden">
+
+    <div class="sad-card">
+
+        <img
+            src="assets/gif/sad.gif"
+            alt="Sad GIF"
+            class="sad-gif">
+
+        <h2>
+            Yahhh... 🥺
+        </h2>
+
+        <p>
+            Masa nggak mau sih...
+            <br><br>
+            Coba dipikir lagi yaa 🤍
+        </p>
+
+        <button id="tryAgainBtn" class="back-btn">
+            🔄 Kembali
+        </button>
+
+    </div>
+
+</section>
+
+<section id="chooseGiftPage" class="page hidden">
+
+    <div class="choose-card">
+
+        <h1>
+            Pilih Salah Satu 🤍
+        </h1>
+
+        <p>
+            Aku udah nyiapin dua hadiah spesial buat kamu.
+        </p>
+
+        <div class="choose-box-wrapper">
+
+            <!-- Box Surat -->
+            <div id="letterBox" class="choose-box">
+
+                📩
+
+                <h3>Kartu Ucapan</h3>
+
+                <p>Buka surat ulang tahun.</p>
+
+            </div>
+
+            <!-- Box Surprise -->
+            <div id="surpriseBox" class="choose-box">
+
+                🎁
+
+                <h3>Surprise</h3>
+
+                <p>Ada sesuatu yang ingin aku tanyakan.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="letterPage" class="page hidden">
+
+    <div class="letter-container">
+
+        <div id="envelope" class="envelope">
+
+            <img
+                src="assets/images/envelope.png"
+                alt="Envelope"
+                class="envelope-image">
+
+            <p>📩 Sentuh amplop untuk membuka surat</p>
+
+        </div>
+
+        <div id="letterContent" class="letter-content hidden">
+
+            <h2>💌 Untuk Sultan</h2>
+
+            <p id="typingLetter"></p>
+
+            <button id="closeLetterBtn">
+                🤍 Tutup Surat
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="surprisePage" class="page hidden">
+
+    <div class="surprise-card">
+
+        <h2>🎁 Surprise</h2>
+
+        <p id="typingGiftText"></p>
+
+        <form id="giftForm">
+
+            <div class="input-group">
+
+                <label>👕 Ukuran Baju</label>
+
+                <input
+                    type="text"
+                    id="shirtSize"
+                    placeholder="Contoh : L">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>🧥 Ukuran Sweater</label>
+
+                <input
+                    type="text"
+                    id="hoodieSize"
+                    placeholder="Contoh : XL">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>👟 Ukuran Sandal</label>
+
+                <input
+                    type="text"
+                    id="sandalSize"
+                    placeholder="Contoh : 42">
+
+            </div>
+
+            <button type="submit" id="sendGiftBtn">
+                💖 Kirim
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section id="endingPage" class="page hidden">
+
+    <div class="ending-card">
+
+        <h1>
+            🌷 Selamat Ulang Tahun 🌷
+        </h1>
+
+        <h2>
+            Muhammad Sultan Aminuddin Masfuk
+        </h2>
+
+        <p>
+            Terima kasih karena sudah lahir di dunia ini.
+            <br><br>
+
+            Semoga panjang umur,
+            sehat selalu,
+            dimudahkan semua urusannya,
+            dan semoga semua impianmu
+            bisa tercapai satu per satu.
+            🤍
+        </p>
+
+        <button id="replayBtn">
+            🔄 Lihat Lagi
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
