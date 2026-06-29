@@ -2436,3 +2436,57 @@ body{
     overflow:hidden;
 
 }
+.show{
+
+    opacity:1 !important;
+
+    transform:translateY(0) scale(1) !important;
+
+    transition:.8s;
+
+}
+
+#birthdayTitle,
+#birthdayName,
+#birthdayDate{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+/* Smoke */
+
+.smoke{
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+.smoke.show{
+
+    opacity:1;
+
+    animation:smokeUp 2s ease forwards;
+
+}
+
+@keyframes smokeUp{
+
+    from{
+
+        transform:translateY(0) scale(.5);
+
+    }
+
+    to{
+
+        transform:translateY(-40px) scale(1.4);
+
+        opacity:0;
+
+    }
+
+}
